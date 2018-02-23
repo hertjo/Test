@@ -6,11 +6,13 @@
 package dhbwka.vwi.vertsys.ejb;
 
 import dhbwka.vwi.vertsys.jpa.Benutzer;
+import javax.ejb.Stateless;
 
 /**
  *
  * @author j_herter
  */
+@Stateless
 public class BenutzerBean extends EntityBean<Benutzer, Long>{
     public BenutzerBean(){
         super(Benutzer.class);

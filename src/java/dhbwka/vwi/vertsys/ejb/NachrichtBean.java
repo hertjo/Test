@@ -6,11 +6,13 @@
 package dhbwka.vwi.vertsys.ejb;
 
 import dhbwka.vwi.vertsys.jpa.Nachricht;
+import javax.ejb.Stateless;
 
 /**
  *
  * @author j_herter
  */
+@Stateless
 public class NachrichtBean extends EntityBean<Nachricht, Long>{
     public NachrichtBean(){
         super(Nachricht.class);

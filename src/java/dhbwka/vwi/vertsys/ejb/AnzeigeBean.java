@@ -6,11 +6,13 @@
 package dhbwka.vwi.vertsys.ejb;
 
 import dhbwka.vwi.vertsys.jpa.Anzeige;
+import javax.ejb.Stateless;
 
 /**
  *
  * @author j_herter
  */
+@Stateless
 public class AnzeigeBean extends EntityBean<Anzeige, Long>{
     public AnzeigeBean(){
         super(Anzeige.class);
